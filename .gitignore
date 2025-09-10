@@ -1,0 +1,10 @@
+﻿################################################################################
+# 이 .gitignore 파일은 Microsoft(R) Visual Studio에서 자동으로 만들어졌습니다.
+################################################################################
+
+/chap07/ArrayTest/x64/Debug
+/chap07/Project1/.vs/Project1
+/chap07/ArrayTest/ArrayTest/x64/Debug/ArrayTest.tlog
+/chap07/ArrayTest/ArrayTest/x64/Debug
+/chap07/ArrayTest/.vs/ArrayTest
+/.vs/CP-2025
