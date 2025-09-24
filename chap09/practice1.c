@@ -20,9 +20,11 @@ void printHelloWorld()
 }
 
 /*
-    문제: 키보드로부터 다음 레코드를 한 줄 입력받아 필드를 구분하여 구조체 배열에 저장한 후 출력하는 프로그램을 작성하시오.
+    문제: 키보드로부터 반복적으로 다음 형식의 레코드를 한 줄 입력받아 필드를 구분하여 구조체 배열에 저장한 후 전체를 출력하는 프로그램을 작성하시오.
     레코드 형식: 이름 | 학번 | 학과 | 학년(정수)
     입력 종료 조건: "exit" 입력
+
+
 */
 struct Student {
     char name[24];
@@ -40,11 +42,13 @@ const Student* findStudentByName(const Student* students, int count, const char*
 
 int test_student_records()
 {
+    /*
     Student students[100] = {{"", "", "", 0}};
     int count = 0;
 
     inputStudents(students, &count);
     printStudents(students, count);
+    */
 
     return 0;
 }
@@ -109,7 +113,9 @@ void printStudent(const Student* student);
 // 출력: 없음
 void printStudents(const Student* students, int count)
 {
-    int i = 0
+    int i = 0;
+    if (students == NULL || count <= 0) return;
+
     printStudentTitle();
 
     for (i = 0; i < count; i++) {
