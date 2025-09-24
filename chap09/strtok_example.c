@@ -1,0 +1,1 @@
+char *strtok_s(char *str, const char *delim, char **context);
